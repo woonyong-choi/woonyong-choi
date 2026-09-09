@@ -44,7 +44,9 @@ Kubernetes 장애의 관측, 원인 판정, 변경 제안, 사후 검증이 서�
 
 ## 기반을 다지는 학습
 
-정글 팀 학습 프로젝트의 코드를 개인 미러로 보존하고, 코드를 따라 설명하며 보완하는 학습 저장소입니다.
+현재는 [lrn-kotlin](https://github.com/woonyong-kr/lrn-kotlin)에서 Kotlin 문법, 동등성과 해시, 람다 캡처·SAM·inline의 동작을 작은 실행 예제로 확인하고 있습니다.
+
+아래 두 저장소는 정글 팀 학습 프로젝트의 개인 미러입니다. 코드를 보존하고, 실행 흐름을 따라 설명하며 보완합니다.
 
 - [lrn-pintos](https://github.com/woonyong-kr/lrn-pintos): 교육용 OS에서 스케줄링·프로세스·가상메모리의 흐름을 다룹니다. COW fork와 익명 페이지 swap을 함께 읽으며 자원의 공유·회수 경계를 살펴봅니다.
 - [lrn-sql](https://github.com/woonyong-kr/lrn-sql): C로 SQL 파싱부터 실행, B+ Tree와 디스크 저장까지 연결한 단일 테이블·ID 인덱스 중심의 학습용 DB입니다.

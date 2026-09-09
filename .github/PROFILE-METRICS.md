@@ -26,7 +26,8 @@ python3 -B -m unittest discover -s scripts -p 'test_*.py'
 | profile-graph | 현재 노트의 실제 outgoing 링크·작성 순서로 Outline/1-hop 탐색 | 개인 도구 유지보수; 공개 코드·릴리스 범위 | [공개 기능](https://github.com/woonyong-kr/obsidian-linked-graph-navigator), [1.6.10](https://github.com/woonyong-kr/obsidian-linked-graph-navigator/releases/tag/1.6.10) |
 | profile-clue-role | 5인 팀의 아키텍처·파이프라인·인터페이스 설계와 종료 후 대표 경로·안전 계약 정리 | 팀 결과 / 개인 설계 / 종료 후 개인 정리를 분리. 전체 코드의 단독 작성이나 운영 성과로 표현하지 않음 | [Reference 역할·한계](https://github.com/woonyong-kr/k8s-clue-python-reference/tree/778e1e864a91179776d258f40083d24b358a7503), [Golden Path](https://github.com/woonyong-kr/k8s-clue-python-reference/blob/778e1e864a91179776d258f40083d24b358a7503/docs/GOLDEN-PATH.md) |
 | profile-clue-next | 후속 Clue는 새 구현을 위한 설계 저장소 | 현재 공개 README 확인; 배포 완료가 아님 | [Clue](https://github.com/woonyong-kr/clue) |
-| profile-learning | OS·DB 팀 학습 코드의 개인 보존 미러 | 팀 학습; 직접 기여는 개별 author/diff로 확인. Kotlin 학습 사실만 소개하고 비공개 저장소 링크는 제외 | [lrn-pintos](https://github.com/woonyong-kr/lrn-pintos), [lrn-sql](https://github.com/woonyong-kr/lrn-sql) |
+| profile-learning | OS·DB 팀 학습 코드의 개인 보존 미러 | 팀 학습; 직접 기여는 개별 author/diff로 확인 | [lrn-pintos](https://github.com/woonyong-kr/lrn-pintos), [lrn-sql](https://github.com/woonyong-kr/lrn-sql) |
+| profile-kotlin | Kotlin 문법·동등성/해시·캡처·SAM·inline을 작은 실행 예제로 확인하는 학습 저장소 | 담당자의 공개 전환 인계 후 GitHub의 public 상태·README·실행 source를 확인. 책 전체 구현이나 학습 이해 완료로 표현하지 않음 | [lrn-kotlin 공개 코드](https://github.com/woonyong-kr/lrn-kotlin/tree/9a9e05f285734d61d15c526f981f32cddc05ea8f) |
 | profile-docs | 개발 개념과 예제를 정리하는 공개 문서 | 공개 첫 화면·탐색 확인; 작성 중 항목 포함, 완독·실무 숙련 주장 아님 | [WN Docs](https://docs.woonyong.com/) |
 
 위 항목은 기존 공개 코드·릴리스와 사용자 지정 소개 범위에서 선별한 public-approved portfolio 문장이다. 정량 성능·사용자 규모·만족도·운영 안정성 수치는 사용하지 않는다. 생성 이력서, 커밋 개수와 테스트 파일 개수는 신규 경력 근거로 쓰지 않는다. 원본·개인·팀 기여를 AI 사용 여부로 대신 판정하지 않는다.
