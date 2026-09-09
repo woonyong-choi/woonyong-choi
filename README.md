@@ -14,7 +14,7 @@
 
 코드를 읽을 때마다 별도 실행 환경으로 옮겨야 하는 불편을 줄이는 도구입니다. Markdown 원문과 실행 중의 임시 편집을 분리하고, 코드가 **어디에서 실행되는지**와 출력·오류를 함께 보여 줍니다. 결과가 불명확한 실행은 다른 환경에서 자동으로 반복하지 않습니다. 같은 실행 UI를 Obsidian과 정적 웹사이트에서 사용하며, 브라우저 데모는 설치 없이 열어 볼 수 있습니다.
 
-[브라우저 데모](https://docs.woonyong.com/obsidian-runnable-code-blocks/) · [설치 안내](https://github.com/woonyong-kr/obsidian-runnable-code-blocks#installation-and-compatibility) · [최신 릴리스 다운로드](https://github.com/woonyong-kr/obsidian-runnable-code-blocks/releases/latest) · [소스](https://github.com/woonyong-kr/obsidian-runnable-code-blocks)
+[브라우저 데모](https://docs.woonyong.com/obsidian-runnable-code-blocks/) · [설치 안내](https://github.com/woonyong-kr/obsidian-runnable-code-blocks#try-it-in-60-seconds) · [최신 릴리스 다운로드](https://github.com/woonyong-kr/obsidian-runnable-code-blocks/releases/latest) · [소스](https://github.com/woonyong-kr/obsidian-runnable-code-blocks)
 
 현재 GitHub 릴리스로 수동 설치합니다. 언어별 실행 환경과 선택적 로컬 companion은 설치 안내에서 확인할 수 있습니다.
 
