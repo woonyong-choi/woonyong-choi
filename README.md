@@ -1,152 +1,58 @@
-<!-- profile_intro:start -->
 # 최우녕
 
-**프로덕션 AI · 런타임 아키텍처 · 쿠버네티스 · 데이터베이스 · 운영체제 · C#/C++**
+설명 가능한 상태 변화와 안전한 자동화에 관심이 있는 개발자입니다. 현재는 **Kotlin으로 백엔드 기반을 다지며**, 직접 사용하는 Obsidian 도구를 만들고 유지하고 있습니다.
 
-[블로그](https://woonyong-kr.github.io/#/blog) · [이메일](mailto:woonyong.kr@gmail.com)
-<!-- profile_intro:end -->
+실행 환경이 바뀌어도 같은 입력을 어떻게 다룰지, 실패했을 때 무엇을 남길지, 자동화가 어디에서 멈춰야 할지를 중요하게 봅니다. 아래에서 사용 가능한 도구와 팀 학습 프로젝트를 구분해 소개합니다.
 
-## <span lang="ko">지난 12개월</span>
+[공개 기술 문서](https://docs.woonyong.com/) · [코드 실행 도구 체험](https://docs.woonyong.com/obsidian-runnable-code-blocks/) · [이메일](mailto:woonyong.kr@gmail.com)
 
-<!-- activity_summary:start -->
-<a href="https://github.com/woonyong-kr?tab=overview&from=2025-09-04&to=2026-09-04"><img alt="Contributions 11,302" src="https://img.shields.io/badge/Contributions-11%2C302-0969DA?style=flat-square"></a>
-<a href="https://github.com/woonyong-kr?tab=overview&from=2025-09-04&to=2026-09-04"><img alt="Commits 8,236" src="https://img.shields.io/badge/Commits-8%2C236-238636?style=flat-square"></a>
-<a href="https://github.com/woonyong-kr?tab=overview&from=2025-09-04&to=2026-09-04"><img alt="Pull Requests 123" src="https://img.shields.io/badge/Pull_Requests-123-8250DF?style=flat-square"></a>
-<a href="https://github.com/woonyong-kr?tab=overview&from=2025-09-04&to=2026-09-04"><img alt="Issues 132" src="https://img.shields.io/badge/Issues-132-D29922?style=flat-square"></a>
-<a href="https://github.com/woonyong-kr?tab=overview&from=2025-09-04&to=2026-09-04"><img alt="Reviews 2" src="https://img.shields.io/badge/Reviews-2-1F6FEB?style=flat-square"></a>
-<a href="https://github.com/woonyong-kr?tab=overview&from=2025-09-04&to=2026-09-04"><img alt="Repositories 42" src="https://img.shields.io/badge/Repositories-42-57606A?style=flat-square"></a>
-<a href="https://github.com/woonyong-kr?tab=overview&from=2025-09-04&to=2026-09-04"><img alt="CI 6/6 passing" src="https://img.shields.io/badge/CI-6/6_passing-238636?style=flat-square"></a>
-<!-- activity_summary:end -->
+## 지금 사용해 볼 수 있는 도구
 
-## <span lang="ko">사용 기술</span>
+개인 도구 프로젝트입니다. 각 저장소의 설치 안내와 공개 릴리스로 직접 확인할 수 있습니다.
 
-<!-- technologies:start -->
-<a href="https://www.c-language.org/"><img alt="C" src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white"></a>
-<a href="https://www.python.org/"><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"></a>
-<a href="https://www.typescriptlang.org/"><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"></a>
-<a href="https://isocpp.org/"><img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white"></a>
-<a href="https://fastapi.tiangolo.com/"><img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"></a>
-<a href="https://github.com/features/actions"><img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white"></a>
-<a href="https://opengitops.dev/"><img alt="GitOps" src="https://img.shields.io/badge/GitOps-F05032?style=flat-square&logo=git&logoColor=white"></a>
-<a href="https://kubernetes.io/"><img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white"></a>
-<a href="https://nats.io/"><img alt="NATS" src="https://img.shields.io/badge/NATS-27AAE1?style=flat-square&logo=natsdotio&logoColor=white"></a>
-<a href="https://www.postgresql.org/"><img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"></a>
-<a href="https://en.wikipedia.org/wiki/SQL"><img alt="SQL" src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=sqlite&logoColor=white"></a>
-<!-- technologies:end -->
+### Runnable Code Blocks — 읽는 자리에서 코드를 실행하기
 
-## <span lang="ko">대표 저장소</span>
+코드 예제를 읽을 때마다 별도 실행 환경으로 옮겨야 하는 불편을 줄이는 Obsidian 플러그인입니다. Markdown 원문과 실행 중의 임시 편집을 분리하고, 코드가 **어디에서 실행되는지**와 출력·오류를 함께 보여 줍니다. 결과가 불명확한 실행을 다른 환경에서 자동으로 반복하지 않도록 실행 전 실패와 실행 후 실패도 구분합니다.
 
-<!-- project_cards:start -->
-<sub>자동 선발 · 공개 증거 순위: 본인 커밋 25 · CI 25 · 테스트 구조 15 · 문서 10 · 최근 유지보수 10 · 메타데이터 10 · 공개 반응 5</sub>
+노트 안에서 예제를 편집·실행할 수 있고, 같은 실행 UI를 정적 웹사이트에서도 사용합니다. 브라우저 데모는 설치 없이 열어 볼 수 있습니다. 언어에 따라 외부 실행 제공자나 별도 로컬 companion이 필요하므로 지원 범위는 설치 안내에서 확인해 주세요.
 
-<p align="center">
-  <a href="https://github.com/woonyong-kr/link-calendar"><img width="410" src="assets/generated/repo-link-calendar.svg" alt="link-calendar 저장소"></a>
-  <a href="https://github.com/woonyong-kr/runnable-code-blocks"><img width="410" src="assets/generated/repo-runnable-code-blocks.svg" alt="runnable-code-blocks 저장소"></a>
-  <br>
-  <a href="https://github.com/woonyong-kr/woon-core"><img width="410" src="assets/generated/repo-woon-core.svg" alt="woon-core 저장소"></a>
-  <a href="https://github.com/woonyong-kr/pintos"><img width="410" src="assets/generated/repo-pintos.svg" alt="pintos 저장소"></a>
-  <br>
-  <a href="https://github.com/woonyong-kr/minidb"><img width="410" src="assets/generated/repo-minidb.svg" alt="minidb 저장소"></a>
-  <a href="https://github.com/woonyong-kr/k8s-clue-python-reference"><img width="410" src="assets/generated/repo-k8s-clue-python-reference.svg" alt="k8s-clue-python-reference 저장소"></a>
-</p>
-<!-- project_cards:end -->
+[브라우저 데모](https://docs.woonyong.com/obsidian-runnable-code-blocks/) · [설치 안내](https://github.com/woonyong-kr/obsidian-runnable-code-blocks#installation-and-compatibility) · [최신 릴리스 다운로드](https://github.com/woonyong-kr/obsidian-runnable-code-blocks/releases/latest) · [소스](https://github.com/woonyong-kr/obsidian-runnable-code-blocks)
 
-## <span lang="ko">검증 상태</span>
+### Link Calendar Navigator — 날짜에서 노트와 일정으로
 
-<!-- ci_status:start -->
-<table width="100%">
-  <thead>
-    <tr>
-      <th align="left">저장소</th>
-      <th align="left">기술 범위</th>
-      <th align="left">CI</th>
-      <th align="right">테스트 파일</th>
-      <th align="right">최근 검증</th>
-      <th align="right">라이선스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://github.com/woonyong-kr/link-calendar">link-calendar</a></td>
-      <td>TypeScript · calendar · knowledge-management</td>
-      <td><a href="https://github.com/woonyong-kr/link-calendar/actions"><img alt="link-calendar CI" src="https://github.com/woonyong-kr/link-calendar/actions/workflows/ci.yml/badge.svg?branch=main"></a></td>
-      <td align="right">16</td>
-      <td align="right">2026-09-03</td>
-      <td align="right">MIT</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/woonyong-kr/runnable-code-blocks">runnable-code-blocks</a></td>
-      <td>TypeScript · code-runner · kotlin</td>
-      <td><a href="https://github.com/woonyong-kr/runnable-code-blocks/actions"><img alt="runnable-code-blocks CI" src="https://github.com/woonyong-kr/runnable-code-blocks/actions/workflows/ci.yml/badge.svg?branch=main"></a></td>
-      <td align="right">12</td>
-      <td align="right">2026-09-01</td>
-      <td align="right">MIT</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/woonyong-kr/woon-core">woon-core</a></td>
-      <td>Python</td>
-      <td><a href="https://github.com/woonyong-kr/woon-core/actions"><img alt="woon-core CI" src="https://github.com/woonyong-kr/woon-core/actions/workflows/ci.yml/badge.svg?branch=main"></a></td>
-      <td align="right">13</td>
-      <td align="right">2026-09-04</td>
-      <td align="right">MIT</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/woonyong-kr/pintos">pintos</a></td>
-      <td>C++ · copy-on-write · operating-system</td>
-      <td><a href="https://github.com/woonyong-kr/pintos/actions"><img alt="pintos CI" src="https://github.com/woonyong-kr/pintos/actions/workflows/ci.yml/badge.svg?branch=main"></a></td>
-      <td align="right">490</td>
-      <td align="right">2026-08-26</td>
-      <td align="right">—</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/woonyong-kr/minidb">minidb</a></td>
-      <td>C · b-plus-tree · database</td>
-      <td><a href="https://github.com/woonyong-kr/minidb/actions"><img alt="minidb CI" src="https://github.com/woonyong-kr/minidb/actions/workflows/ci.yml/badge.svg?branch=main"></a></td>
-      <td align="right">5</td>
-      <td align="right">2026-08-03</td>
-      <td align="right">—</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/woonyong-kr/k8s-clue-python-reference">k8s-clue-python-reference</a></td>
-      <td>Python · fastapi · gitops</td>
-      <td><a href="https://github.com/woonyong-kr/k8s-clue-python-reference/actions"><img alt="k8s-clue-python-reference CI" src="https://github.com/woonyong-kr/k8s-clue-python-reference/actions/workflows/ci.yml/badge.svg?branch=main"></a></td>
-      <td align="right">36</td>
-      <td align="right">2026-08-17</td>
-      <td align="right">—</td>
-    </tr>
-  </tbody>
-</table>
-<!-- ci_status:end -->
+날짜별 기록을 달력에서 찾아 노트로 이어 주는 Obsidian 플러그인입니다. 로컬 노트 탐색과 외부 일정 동기화를 분리하고, Google Calendar 연동은 **선택한 전용 캘린더와 사용자가 실행한 동기화**로 범위를 제한했습니다. 충돌은 조용히 덮어쓰지 않고 확인할 수 있게 남깁니다.
 
-## <span lang="ko">최근 공개 작업</span>
+날짜 기반 노트 탐색과 선택적 수동 양방향 동기화를 제공합니다. Google 연동 없이도 로컬 노트 탐색을 사용할 수 있습니다.
 
-<!-- recent_work:start -->
-- <span lang="ko">**linked-graph** · [fix: hide only non-canonical graph destinations](https://github.com/woonyong-kr/linked-graph/commit/06d8d18f37134fac0878095f4ab918b6becae414) · 2026-09-03</span>
-- <span lang="ko">**link-calendar** · [feat: 선택한 일정을 Google Calendar로 안전하게 동기화](https://github.com/woonyong-kr/link-calendar/commit/4575c80b0d4781697beb4dd70c2d726fd2fc4894) · 2026-09-03</span>
-- <span lang="ko">**link-calendar** · [feat: 본문 일정 시간과 표시 형식을 지원](https://github.com/woonyong-kr/link-calendar/commit/2025e60c34c5c3253c4c4b6ea38f4ee1e1d406a5) · 2026-09-02</span>
-- <span lang="ko">**linked-graph** · [fix: resolve graph colour precedence](https://github.com/woonyong-kr/linked-graph/commit/0359a97c62a2b4626f897aef4b6fd4de61d2d556) · 2026-09-01</span>
-- <span lang="ko">**linked-graph** · [fix: prioritize semantic graph colours](https://github.com/woonyong-kr/linked-graph/commit/e71fa2913a7c03c5984f6928baff1493124b52c6) · 2026-09-01</span>
-- <span lang="ko">**linked-graph** · [feat: distinguish graph node kinds by color](https://github.com/woonyong-kr/linked-graph/commit/642a0003dd89561035d86f68a2a22da7ee30b814) · 2026-09-01</span>
-<!-- recent_work:end -->
+[소개·미리보기](https://community.obsidian.md/plugins/link-calendar) · [설치 안내](https://github.com/woonyong-kr/obsidian-link-calendar-navigator#installation-and-compatibility) · [최신 릴리스 다운로드](https://github.com/woonyong-kr/obsidian-link-calendar-navigator/releases/latest) · [소스](https://github.com/woonyong-kr/obsidian-link-calendar-navigator)
 
-## <span lang="ko">외부 저장소 기여</span>
+### Linked Graph Navigator — 전체 그래프보다 지금 읽는 문서의 맥락
 
-<!-- collaboration:start -->
-- <span lang="ko">**Jungle-303-04/demo-game** · [fix: pin working admission toggle console](https://github.com/Jungle-303-04/demo-game/pull/22) · 2026-07-25</span>
-- <span lang="ko">**Jungle-303-04/demo-game** · [[복구] api-server - 로비 replicas 원복 PR](https://github.com/Jungle-303-04/demo-game/pull/21) · 2026-07-24</span>
-- <span lang="ko">**Jungle-303-04/demo-game** · [perf: 게임 파드 예약량 / 게임 노드 용량 / 스케줄링 여유](https://github.com/Jungle-303-04/demo-game/pull/20) · 2026-07-24</span>
-- <span lang="ko">**Jungle-303-04/final** · [fix: AI 입력창 고정 / 패널 스크롤 경계 / viewport 높이](https://github.com/Jungle-303-04/final/pull/662) · 2026-07-24</span>
-- <span lang="ko">**Jungle-303-04/final** · [파드 상세 원인 표시와 사이드 패널 UX 통합](https://github.com/Jungle-303-04/final/pull/661) · 2026-07-24</span>
-- <span lang="ko">**Jungle-303-04/final** · [fix: 위험 파드 클릭을 리소스 상세로 연결](https://github.com/Jungle-303-04/final/pull/660) · 2026-07-24</span>
-<!-- collaboration:end -->
+링크가 많아질수록 전체 그래프만으로 다음에 읽을 문서를 고르기 어려워집니다. 이 도구는 현재 노트의 **직접 연결된 링크와 작성 순서**를 기준으로 Outline과 1-hop 그래프를 구성합니다. 노트에 없는 관계를 추측해 추가하지 않고, 실제로 해석된 링크를 따라 탐색하도록 범위를 좁혔습니다.
 
-## <span lang="ko">최근 글</span>
+문서 중심으로 읽기 순서와 인접한 노트를 확인할 수 있는 Obsidian 탐색 도구입니다.
 
-<!-- recent_posts:start -->
-- <span lang="ko">**프로젝트 · PostgreSQL · NATS** · [DB 는 바뀌었는데 이벤트만 사라질 때](https://woonyong-kr.github.io/blog/transactional-outbox/) · 2026-08-02<br><sub>Transactional Outbox · 멱등 처리 · DLQ 구현 기록</sub></span>
-- <span lang="ko">**프로젝트 · C++** · [655개 함수와 열 개 회사 사이](https://woonyong-kr.github.io/blog/cli-proxy/) · 2026-08-02<br><sub>C++/CLI 프록시로 엔진과 콘텐츠의 경계를 고정한 기록</sub></span>
-- <span lang="ko">**회고** · [도구가 아니라 기준이 문제였다](https://woonyong-kr.github.io/blog/team-standard/) · 2026-08-02<br><sub>노션 도입 실패에서 완료 기준 합의까지, 60명을 한 팀으로 만든 과정</sub></span>
-- <span lang="ko">**프로젝트 · C** · [공유된 페이지는 스왑도 공유한다](https://woonyong-kr.github.io/blog/swap-sharing/) · 2026-08-02<br><sub>COW 가 만든 두 번째 문제, 슬롯은 누가 언제 반납하나</sub></span>
-- <span lang="ko">**회고** · [열 개 회사의 소스를 한곳으로](https://woonyong-kr.github.io/blog/source-integration/) · 2026-08-02<br><sub>각자 고치던 엔진을 중앙 관리로 모으고 PM 이 된 과정</sub></span>
-- <span lang="ko">**프로젝트 · Python** · [장애 원인 판정을 YAML로 분리한 이유](https://woonyong-kr.github.io/blog/rule-catalog/) · 2026-08-02<br><sub>규칙 카탈로그와 합성 회귀 입력이 확인하는 범위</sub></span>
-<!-- recent_posts:end -->
+[소개·미리보기](https://community.obsidian.md/plugins/linked-graph) · [설치 안내](https://github.com/woonyong-kr/obsidian-linked-graph-navigator#installation-and-compatibility) · [최신 릴리스 다운로드](https://github.com/woonyong-kr/obsidian-linked-graph-navigator/releases/latest) · [소스](https://github.com/woonyong-kr/obsidian-linked-graph-navigator)
+
+설치는 각 GitHub 릴리스의 안내를 기준으로 합니다. Community 소개 페이지가 있다는 사실을 Obsidian 공식 목록 등록 완료와 같은 뜻으로 쓰지 않습니다.
+
+## 팀 프로젝트에서 다룬 문제
+
+### Clue — 장애 증거에서 안전한 변경 제안까지
+
+Kubernetes 장애의 관측, 원인 판정, 변경 제안, 사후 검증이 서로 끊어지는 문제를 다룬 **크래프톤 정글 5인 팀 프로젝트**입니다. 팀장으로 전체 아키텍처, 장애 처리 파이프라인과 서비스 간 인터페이스 설계를 맡았습니다. 팀의 전체 코드를 혼자 구현한 것으로 설명하지 않습니다.
+
+핵심 판단은 자동화에 클러스터 수정 권한을 직접 주지 않는 것이었습니다. 같은 사건의 증거를 연결하고, 규칙과 허용된 변경 범위로 제안을 제한한 뒤 **사람이 검토하는 GitHub Draft PR**로 넘깁니다.
+
+프로젝트 종료 후 개인 작업에서는 대표 흐름을 ImagePullBackOff 한 경로로 좁히고 안전 계약을 다시 점검했습니다. Python Reference에는 해당 흐름의 코드·로컬 재현 방법·검증 범위가 공개돼 있습니다. 실사용 트래픽이나 외부 클러스터 E2E를 검증한 운영 서비스는 아니며, 후속 Clue 저장소는 새 구현을 위한 설계 단계입니다.
+
+[Python Reference·재현 방법](https://github.com/woonyong-kr/k8s-clue-python-reference) · [안전 계약과 대표 흐름](https://github.com/woonyong-kr/k8s-clue-python-reference/blob/main/docs/GOLDEN-PATH.md) · [후속 Clue 설계](https://github.com/woonyong-kr/clue)
+
+## 기반을 다지는 학습
+
+다음 두 저장소는 정글 팀 학습 프로젝트의 개인 보존 미러입니다. 제품 운영 경험이나 모든 기능의 단독 구현으로 내세우지 않고, 코드를 따라 설명하고 보완하는 기반으로 삼고 있습니다.
+
+- [lrn-pintos](https://github.com/woonyong-kr/lrn-pintos): 교육용 OS에서 스케줄링·프로세스·가상메모리의 흐름을 다룹니다. COW fork와 익명 페이지 swap을 함께 읽으며 자원의 공유·회수 경계를 살펴봅니다.
+- [lrn-sql](https://github.com/woonyong-kr/lrn-sql): C로 SQL 파싱부터 실행, B+ Tree와 디스크 저장까지 연결한 학습 DB입니다. 단일 테이블·ID 인덱스 중심이며, WAL·crash recovery나 일반적인 트랜잭션 격리를 갖춘 DBMS는 아닙니다.
+
+[WN Docs](https://docs.woonyong.com/)에는 개발 개념과 예제를 정리하고 있습니다. 작성 중인 항목을 포함하며, 공개 문서가 있다는 사실을 해당 기술의 실무 숙련 증거로 대신하지 않습니다.

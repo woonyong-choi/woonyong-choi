@@ -1,150 +1,34 @@
-name: Refresh public activity
+name: Validate profile
 
 on:
-  schedule:
-    - cron: "23 */6 * * *"
+  push:
+    paths:
+      - README.md
+      - scripts/**
+      - .github/workflows/metrics.yml
+      - .github/PROFILE-METRICS.md
+  pull_request:
+    paths:
+      - README.md
+      - scripts/**
+      - .github/workflows/metrics.yml
+      - .github/PROFILE-METRICS.md
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: public-activity
+  group: profile-validation-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  refresh:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout profile source
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
-
-      - name: Record static profile marker
+      - name: Check curated profile without rewriting it
         run: |
-          python3 - <<'PY'
-          import hashlib
-          import os
-          from pathlib import Path
-
-          readme = Path("README.md").read_text(encoding="utf-8")
-          start = "<!-- profile_intro:start -->"
-          end = "<!-- profile_intro:end -->"
-          if readme.count(start) != 1 or readme.count(end) != 1:
-              raise SystemExit("profile_intro ownership markers are invalid")
-          owned = readme[readme.index(start):readme.index(end) + len(end)]
-          digest = hashlib.sha256(owned.encode()).hexdigest()
-          Path(os.environ["RUNNER_TEMP"], "profile-intro.sha256").write_text(digest)
-          PY
-
-      - name: Accumulate public activity
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python3 scripts/update_profile.py \
-            --login woonyong-kr \
-            --history .github/activity-history.json \
-            --readme README.md
-
-      - name: Verify generated index
-        run: |
-          python3 -m py_compile scripts/update_profile.py
-          python3 -m unittest discover -s scripts -p 'test_*.py'
-          python3 - <<'PY'
-          import json
-          from pathlib import Path
-          import re
-          import xml.etree.ElementTree as ET
-
-          readme = Path("README.md").read_text(encoding="utf-8")
-          history = json.loads(Path(".github/activity-history.json").read_text())
-          markers = (
-              "<!-- profile_intro:start -->",
-              "<!-- profile_intro:end -->",
-              "<!-- activity_summary:start -->",
-              "<!-- activity_summary:end -->",
-              "<!-- project_cards:start -->",
-              "<!-- project_cards:end -->",
-              "<!-- recent_posts:start -->",
-              "<!-- recent_posts:end -->",
-              "<!-- ci_status:start -->",
-              "<!-- ci_status:end -->",
-              "<!-- collaboration:start -->",
-              "<!-- collaboration:end -->",
-              "<!-- recent_work:start -->",
-              "<!-- recent_work:end -->",
-              "<!-- technologies:start -->",
-              "<!-- technologies:end -->",
-          )
-          if any(readme.count(marker) != 1 for marker in markers):
-              raise SystemExit("profile marker verification failed")
-          ordered_markers = (
-              "<!-- project_cards:start -->",
-              "<!-- ci_status:start -->",
-              "<!-- recent_work:start -->",
-              "<!-- collaboration:start -->",
-              "<!-- recent_posts:start -->",
-          )
-          if [readme.index(marker) for marker in ordered_markers] != sorted(
-              readme.index(marker) for marker in ordered_markers
-          ):
-              raise SystemExit("profile section order differs")
-          if not history["commits"]:
-              raise SystemExit("commit history is empty")
-          if readme.count("assets/generated/repo-") != 6:
-              raise SystemExit("repository card count is not six")
-          ci_section = readme[
-              readme.index("<!-- ci_status:start -->"):
-              readme.index("<!-- ci_status:end -->")
-          ]
-          blog_section = readme[
-              readme.index("<!-- recent_posts:start -->"):
-              readme.index("<!-- recent_posts:end -->")
-          ]
-          if blog_section.count("https://woonyong-kr.github.io/blog/") != 6:
-              raise SystemExit("recent blog post count is not six")
-          if '<table width="100%">' not in ci_section:
-              raise SystemExit("verification table is not full width")
-          if "기술 범위" not in ci_section or "최근 검증" not in ci_section:
-              raise SystemExit("verification evidence columns are missing")
-          if "| 글 | 주제 | 발행일 |" in blog_section or "- <span" not in blog_section:
-              raise SystemExit("recent posts are not rendered as an activity list")
-          assets = sorted(Path("assets/generated").glob("repo-*.svg"))
-          if len(assets) != 6:
-              raise SystemExit("generated repository card count is not six")
-          referenced = set(re.findall(r'assets/generated/(repo-[^" ]+\.svg)', readme))
-          if referenced != {asset.name for asset in assets}:
-              raise SystemExit("README and generated repository cards differ")
-          for asset in assets:
-              ET.parse(asset)
-          if "<details>" in readme or "assets/project-" in readme:
-              raise SystemExit("manual or folded presentation detected")
-          PY
-
-      - name: Verify static profile marker ownership
-        run: |
-          python3 - <<'PY'
-          import hashlib
-          import os
-          from pathlib import Path
-
-          readme = Path("README.md").read_text(encoding="utf-8")
-          start = "<!-- profile_intro:start -->"
-          end = "<!-- profile_intro:end -->"
-          owned = readme[readme.index(start):readme.index(end) + len(end)]
-          actual = hashlib.sha256(owned.encode()).hexdigest()
-          expected = Path(os.environ["RUNNER_TEMP"], "profile-intro.sha256").read_text()
-          if actual != expected:
-              raise SystemExit("dynamic workflow changed profile_intro")
-          PY
-
-      - name: Commit refreshed activity
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md .github/activity-history.json assets/generated
-          if git diff --cached --quiet; then
-            echo "No public activity changes"
-            exit 0
-          fi
-          git commit -m "chore: 공개 활동 원장 / 저장소 상태 / 협업 PR"
-          git push
+          python3 -B scripts/update_profile.py --check
+          python3 -B -m unittest discover -s scripts -p 'test_*.py'
