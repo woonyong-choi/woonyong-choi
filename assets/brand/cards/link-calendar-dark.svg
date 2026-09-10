@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="160" viewBox="0 0 270 160" role="img" aria-labelledby="title desc">
+  <title id="title">Link Calendar Navigator — Install</title>
+  <desc id="desc">날짜로 노트 찾기</desc>
+  <rect x="4.5" y="4.5" width="261" height="151" rx="13" fill="#191720" stroke="#35303f"/>
+  <g transform="translate(22 21) scale(.84)" fill="none" stroke="#c3a6ff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="22" height="20" rx="4"/><path d="M8 2v6m12-6v6M3 12h22"/><path d="m10 18 3 3 6-6"/></g>
+  <g fill="#c3a6ff" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700"><text x="201" y="37" text-anchor="end">Install</text></g>
+  <path d="m215 39 8-8m-7 0h7v7" fill="none" stroke="#c3a6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#f0f6fc" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="-.35">
+    <text x="22" y="82">Link Calendar</text>
+    <text x="22" y="105">Navigator</text>
+  </g>
+  <text x="22" y="136" fill="#aab3c0" font-family="Arial, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif" font-size="12.5">날짜로 노트 찾기</text>
+</svg>

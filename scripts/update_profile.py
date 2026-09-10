@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from html.parser import HTMLParser
 from pathlib import Path
 import re
 import sys
@@ -19,7 +20,23 @@ PRIVATE_LOCATORS = ("/Users/", "file://", "repo://", "wiki/personal/", "private/
 
 
 def markdown_links(markdown: str) -> list[str]:
-    return list(dict.fromkeys(match.group(2) for match in LINK_PATTERN.finditer(markdown)))
+    class AnchorParser(HTMLParser):
+        def __init__(self) -> None:
+            super().__init__()
+            self.links: list[str] = []
+
+        def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+            if tag == "a":
+                href = dict(attrs).get("href")
+                if href:
+                    self.links.append(href)
+
+    parser = AnchorParser()
+    parser.feed(markdown)
+    return list(dict.fromkeys([
+        *(match.group(2) for match in LINK_PATTERN.finditer(markdown)),
+        *parser.links,
+    ]))
 
 
 def validate_profile(markdown: str) -> list[str]:

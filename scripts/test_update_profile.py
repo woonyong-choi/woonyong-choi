@@ -38,6 +38,14 @@ class ProfileContractTest(unittest.TestCase):
         self.assertTrue(validate_profile("# One\n# Two\n"))
         self.assertTrue(validate_profile("No heading\n[Source](https://example.com)"))
 
+    def test_html_card_links_are_validated(self) -> None:
+        public = '# Developer\n<a href="https://example.com/tool"><img src="card.svg"></a>'
+        self.assertEqual(markdown_links(public), ["https://example.com/tool"])
+        self.assertEqual(validate_profile(public), [])
+        for url in ("javascript:alert(1)", "https://localhost/private", "https://example.com/#/blog"):
+            with self.subTest(url=url):
+                self.assertTrue(validate_profile(public.replace("https://example.com/tool", url)))
+
     def test_real_profile_and_cli_are_read_only(self) -> None:
         profile = ROOT / "README.md"
         before = hashlib.sha256(profile.read_bytes()).hexdigest()

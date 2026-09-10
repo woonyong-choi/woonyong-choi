@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="160" viewBox="0 0 270 160" role="img" aria-labelledby="title desc">
+  <title id="title">Linked Graph Navigator — Install</title>
+  <desc id="desc">목차·그래프로 노트 탐색</desc>
+  <rect x="4.5" y="4.5" width="261" height="151" rx="13" fill="#191720" stroke="#35303f"/>
+  <g transform="translate(22 21) scale(.84)" fill="none" stroke="#c3a6ff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8 11 3M8 8l4 13m7-10-7 10"/><circle cx="6" cy="6" r="4"/><circle cx="22" cy="12" r="4"/><circle cx="11" cy="23" r="4"/></g>
+  <g fill="#c3a6ff" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700"><text x="201" y="37" text-anchor="end">Install</text></g>
+  <path d="m215 39 8-8m-7 0h7v7" fill="none" stroke="#c3a6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#f0f6fc" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="-.35">
+    <text x="22" y="82">Linked Graph</text>
+    <text x="22" y="105">Navigator</text>
+  </g>
+  <text x="22" y="136" fill="#aab3c0" font-family="Arial, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif" font-size="12.5">목차·그래프로 노트 탐색</text>
+</svg>

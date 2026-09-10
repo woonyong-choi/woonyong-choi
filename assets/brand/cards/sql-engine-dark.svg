@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="160" viewBox="0 0 270 160" role="img" aria-labelledby="title desc">
+  <title id="title">SQL Database Engine — Code</title>
+  <desc id="desc">C11 · 팀 학습</desc>
+  <rect x="4.5" y="4.5" width="261" height="151" rx="13" fill="#161b22" stroke="#30363d"/>
+  <g transform="translate(22 21) scale(.84)" fill="none" stroke="#f0f6fc" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="14" cy="6" rx="11" ry="4"/><path d="M3 6v16c0 2.2 4.9 4 11 4s11-1.8 11-4V6M3 14c0 2.2 4.9 4 11 4s11-1.8 11-4"/></g>
+  <g fill="#f0f6fc" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700"><text x="201" y="37" text-anchor="end">Code</text></g>
+  <path d="m215 39 8-8m-7 0h7v7" fill="none" stroke="#f0f6fc" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#f0f6fc" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="-.35">
+    <text x="22" y="82">SQL Database</text>
+    <text x="22" y="105">Engine</text>
+  </g>
+  <text x="22" y="136" fill="#aab3c0" font-family="Arial, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif" font-size="12.5">C11 · 팀 학습</text>
+</svg>
