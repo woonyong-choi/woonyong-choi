@@ -8,7 +8,6 @@
 
 <p>
 <a href="https://docs.woonyong.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/brand/button-wiki-dark.svg"><img src="assets/brand/button-wiki-light.svg" width="106" alt="Wiki 열기"></picture></a>
-<a href="mailto:woonyong.kr@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/brand/button-email-dark.svg"><img src="assets/brand/button-email-light.svg" width="106" alt="이메일 보내기"></picture></a>
 </p>
 
 </div>
