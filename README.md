@@ -23,7 +23,7 @@
 ## Systems projects
 
 <p align="center">
-<a href="https://github.com/woonyong-kr/lrn-sql"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/brand/cards/sql-engine-dark.svg"><img src="assets/brand/cards/sql-engine-light.svg" width="270" alt="SQL Database Engine · C11 · 팀 학습 · 코드"></picture></a>
-<a href="https://github.com/woonyong-kr/lrn-pintos"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/brand/cards/operating-system-dark.svg"><img src="assets/brand/cards/operating-system-light.svg" width="270" alt="Operating System · PintOS · 팀 학습 · 코드"></picture></a>
-<a href="https://github.com/woonyong-kr/k8s-clue-python-reference"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/brand/cards/kubernetes-dark.svg"><img src="assets/brand/cards/kubernetes-light.svg" width="270" alt="Kubernetes Troubleshooting Tool · Python · 팀 프로젝트 · 코드"></picture></a>
+<a href="https://github.com/woonyong-choi/lrn-sql"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/brand/cards/sql-engine-dark.svg"><img src="assets/brand/cards/sql-engine-light.svg" width="270" alt="SQL Database Engine · C11 · 팀 학습 · 코드"></picture></a>
+<a href="https://github.com/woonyong-choi/lrn-pintos"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/brand/cards/operating-system-dark.svg"><img src="assets/brand/cards/operating-system-light.svg" width="270" alt="Operating System · PintOS · 팀 학습 · 코드"></picture></a>
+<a href="https://github.com/woonyong-choi/k8s-clue-python-reference"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/brand/cards/kubernetes-dark.svg"><img src="assets/brand/cards/kubernetes-light.svg" width="270" alt="Kubernetes Troubleshooting Tool · Python · 팀 프로젝트 · 코드"></picture></a>
 </p>
