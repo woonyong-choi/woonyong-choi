@@ -18,7 +18,8 @@ C# 프레임워크와 3D 콘텐츠를 개발한 뒤, PD로 제품 개발을 이�
 
 코딩 에이전트의 대화, 터미널, 작업 기록을 한곳에서 다루는 macOS 작업 공간입니다. 로컬 폴더에서 Codex·Claude CLI를 실행하고, 요청의 완료 조건과 검사 결과를 응답 기록과 함께 남깁니다.
 
-개인 프로젝트로 개발 중입니다. 여러 계정 전환과 CLI/API 대화 연결은 설계 단계입니다.
+- 현재 로컬 폴더와 CLI 세션을 연결하는 기능을 개발하고 있습니다.
+- 여러 계정 전환과 CLI/API 대화 연결은 설계 단계입니다.
 
 **[Saturn 저장소](https://github.com/woonyong-choi/saturn)** · [현재 사용법](https://github.com/woonyong-choi/saturn/blob/main/docs/guide.md) · [개발 설계](https://github.com/woonyong-choi/saturn/blob/main/docs/saturn-design.md)
 
@@ -26,18 +27,46 @@ C# 프레임워크와 3D 콘텐츠를 개발한 뒤, PD로 제품 개발을 이�
 
 ### Manta
 
-| 도구 | 기능 |
-| --- | --- |
-| [Manta Code Blocks](https://github.com/woonyong-choi/manta-code-blocks) | 노트 안에서 코드 편집·실행·결과 확인 |
-| [Manta Calendar](https://github.com/woonyong-choi/manta-calendar) | 날짜가 적힌 노트를 달력에서 탐색 |
-| [Manta Graph](https://github.com/woonyong-choi/manta-graph) | 현재 노트의 연결을 목차와 그래프로 탐색 |
-| [Manta Diagrams](https://github.com/woonyong-choi/manta-diagrams) | 긴 라벨과 복잡한 연결을 읽기 쉽게 렌더링 |
+Obsidian에서 코드 실행, 일정, 노트 관계, 다이어그램 작업을 확장하는 플러그인입니다.
 
-Code Blocks·Calendar·Graph는 Obsidian Community에서 설치할 수 있습니다. Diagrams는 출시 후보 버전을 검증하고 있습니다.
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="28%">도구</th>
+      <th>무엇을 하는가</th>
+      <th width="22%">현재 상태</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/woonyong-choi/manta-code-blocks">Manta Code Blocks</a></td>
+      <td>노트 안에서 코드를 편집하고 실행 결과를 확인합니다.</td>
+      <td>Community 배포</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/woonyong-choi/manta-calendar">Manta Calendar</a></td>
+      <td>날짜가 적힌 노트를 달력에서 탐색합니다.</td>
+      <td>Community 배포</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/woonyong-choi/manta-graph">Manta Graph</a></td>
+      <td>현재 노트의 연결을 목차와 그래프로 탐색합니다.</td>
+      <td>Community 배포</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/woonyong-choi/manta-diagrams">Manta Diagrams</a></td>
+      <td>긴 라벨과 복잡한 연결을 읽기 쉽게 렌더링합니다.</td>
+      <td>출시 후보 검증</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 개발 위키
 
-원자료·주장·페이지 명세를 분리하고, 승인 기록과 해시를 검사한 뒤 문서를 조립합니다. 검색은 필요한 절만 반환하고, 공개 사이트에는 검토를 마친 문서만 내보냅니다.
+원자료에서 공개 문서까지의 출처를 보존하는 개발 위키입니다.
+
+- 원자료·주장·페이지 명세를 분리하고, 승인 기록과 해시를 검사한 뒤 문서를 조립합니다.
+- 검색은 필요한 절만 반환하고, 공개 사이트에는 검토를 마친 문서만 내보냅니다.
 
 [개발 위키 읽기](https://docs.woonyong.com/) · [구현 코드 · woon-core](https://github.com/woonyong-choi/woon-core)
 
@@ -45,16 +74,28 @@ Code Blocks·Calendar·Graph는 Obsidian Community에서 설치할 수 있습니
 
 ### [PintOS](https://github.com/woonyong-choi/lrn-pintos)
 
-정글 팀 과제로 스케줄링·프로세스 생명주기·가상 메모리를 구현했습니다. 과제 이후에는 MLFQS와 선점·우선순위 기부 문제를 보완했습니다.
+교육용 운영체제 PintOS에 스레드 스케줄링, 사용자 프로세스, 가상 메모리를 구현한 팀 학습 프로젝트입니다.
+
+- 과제 이후 MLFQS와 선점·우선순위 기부 문제를 다시 추적해 보완했습니다.
+- 제공된 테스트로 단계별 동작을 검증한 범위와 남은 실패를 저장소에 기록했습니다.
 
 ### [SQL 엔진](https://github.com/woonyong-choi/lrn-sql)
 
-정글 팀 과제에서 C 기반 엔진 구현을 주도했습니다. B+Tree·페이지 저장 구조·버퍼 풀을 연결했고, 100만 행 삽입에서 드러난 반복 탐색과 잠금 누적을 gdb로 추적해 고쳤습니다. [설계와 선택 이유](https://github.com/woonyong-choi/lrn-sql/blob/main/docs/design.md)를 기록했습니다.
+C로 SQL을 입력받아 페이지에 저장하고 B+Tree 인덱스로 조회하는 학습용 데이터베이스 엔진입니다.
+
+- 팀 과제에서 페이지 저장 구조와 버퍼 풀, B+Tree를 연결하는 구현을 주도했습니다.
+- 100만 행 삽입에서 드러난 반복 탐색과 잠금 누적을 gdb로 추적해 수정했습니다. 자세한 선택은 [설계 문서](https://github.com/woonyong-choi/lrn-sql/blob/main/docs/design.md)에 기록했습니다.
 
 ### [Kubernetes 장애 진단 · K8s Clue](https://github.com/woonyong-choi/k8s-clue)
 
-5인 팀의 팀장으로 장애 진단 파이프라인과 서비스 간 인터페이스를 설계했습니다. 증거 수집은 읽기 전용으로, 수정안은 사람이 검토하는 Draft PR로 제한했습니다. 공개 정리본은 ImagePullBackOff 경로의 계약 테스트를 통과했지만 실제 클러스터·GitHub 연동 E2E는 남아 있습니다.
+Kubernetes 장애 증거를 수집하고 수정안을 Draft PR로 제안하는 5인 팀 프로젝트입니다.
+
+- 팀장으로 진단 파이프라인과 서비스 간 인터페이스를 설계하고, 증거 수집을 읽기 전용으로 제한했습니다.
+- 공개 정리본은 ImagePullBackOff 경로의 계약 테스트를 통과했으며, 실제 클러스터·GitHub 연동 E2E는 아직 검증하지 않았습니다.
 
 ### [다누리 C# 프레임워크](https://github.com/woonyong-choi/dx_framework)
 
-실무에서 C++ 엔진 위에 액터 생명주기·코루틴·이벤트 API를 제공하는 C# 계층을 구현했습니다. 엔진 DLL은 비공개이며, 공개 저장소에서는 코루틴 계층만 실행할 수 있습니다.
+C++ 엔진 위에서 액터 생명주기, 코루틴, 이벤트를 다루는 C# 실무 프레임워크입니다.
+
+- C# 계층의 API와 실행 흐름을 구현하고 3D 콘텐츠 개발에 사용했습니다.
+- 원본 엔진 DLL은 비공개이며, 공개 저장소에서는 코루틴 계층만 실행할 수 있습니다.
