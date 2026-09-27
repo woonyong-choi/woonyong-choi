@@ -4,21 +4,20 @@
 
 # 최우녕
 
-필요한 도구를 직접 구현합니다.
+문서와 개발 흐름에서 반복되는 문제를 코드로 해결합니다.
 
 [이력서 · 포트폴리오](https://docs.woonyong.com/resume/) · [개발 위키](https://docs.woonyong.com/)
 
 </div>
 
-C# 프레임워크와 3D 콘텐츠를 개발한 뒤, PD로 제품 개발을 이끌었습니다. 시스템의 동작을 더 깊이 이해하기 위해 크래프톤 정글에서 PintOS와 SQL 엔진을 구현하고 Kubernetes 장애 진단 도구를 설계했습니다.
+C# 프레임워크와 3D 콘텐츠를 개발했고, 이후 PD로 제품 개발을 맡았습니다. 운영체제와 DBMS 구현, Kubernetes 장애 진단 도구 설계를 통해 시스템의 동작을 다시 공부했습니다.
 
-현재는 Saturn과 Obsidian 플러그인, 출처를 보존하는 개발 위키를 만들고 있습니다.
+Saturn과 Obsidian 플러그인, 개발 위키는 그 과정에서 만난 문제를 풀기 위해 만드는 도구입니다.
 
 ## Saturn
 
-코딩 에이전트의 대화, 터미널, 작업 기록을 한곳에서 다루는 macOS 작업 공간입니다. 로컬 폴더에서 Codex·Claude CLI를 실행하고, 요청의 완료 조건과 검사 결과를 응답 기록과 함께 남깁니다.
+Codex·Claude CLI로 일할 때 흩어지는 대화, 터미널, 완료 조건을 함께 보는 macOS 작업 공간입니다. 로컬 폴더와 CLI 세션을 연결하고, 요청과 검사 결과를 기록합니다.
 
-- 현재 로컬 폴더와 CLI 세션을 연결하는 기능을 개발하고 있습니다.
 - 여러 계정 전환과 CLI/API 대화 연결은 설계 단계입니다.
 
 **[Saturn 저장소](https://github.com/woonyong-choi/saturn)** · [현재 사용법](https://github.com/woonyong-choi/saturn/blob/main/docs/guide.md) · [개발 설계](https://github.com/woonyong-choi/saturn/blob/main/docs/saturn-design.md)
@@ -63,9 +62,9 @@ Obsidian에서 코드 실행, 일정, 노트 관계, 다이어그램 작업을 �
 
 ### 개발 위키
 
-원자료에서 공개 문서까지의 출처를 보존하는 개발 위키입니다.
+원자료와 문장의 출처를 남기고, 검토한 문서만 공개하는 개발 위키입니다.
 
-- 원자료·주장·페이지 명세를 분리하고, 승인 기록과 해시를 검사한 뒤 문서를 조립합니다.
+- 원자료·주장·페이지 구성을 따로 관리하고, 승인 기록과 해시를 확인한 뒤 문서를 생성합니다.
 - 검색은 필요한 절만 반환하고, 공개 사이트에는 검토를 마친 문서만 내보냅니다.
 
 [개발 위키 읽기](https://docs.woonyong.com/) · [구현 코드 · woon-core](https://github.com/woonyong-choi/woon-core)
