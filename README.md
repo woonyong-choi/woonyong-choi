@@ -34,6 +34,7 @@ Obsidian에서 코드 실행, 일정, 노트 관계, 다이어그램 작업을 �
     <tr>
       <th width="28%">도구</th>
       <th>무엇을 하는가</th>
+      <th>구현 경계</th>
       <th width="22%">현재 상태</th>
     </tr>
   </thead>
@@ -41,21 +42,25 @@ Obsidian에서 코드 실행, 일정, 노트 관계, 다이어그램 작업을 �
     <tr>
       <td><a href="https://github.com/woonyong-choi/manta-code-blocks">Manta Code Blocks</a></td>
       <td>노트 안에서 코드를 편집하고 실행 결과를 확인합니다.</td>
+      <td>브라우저·로컬·원격 실행기를 같은 어댑터 계약으로 연결합니다.</td>
       <td>Community 배포</td>
     </tr>
     <tr>
       <td><a href="https://github.com/woonyong-choi/manta-calendar">Manta Calendar</a></td>
       <td>날짜가 적힌 노트를 달력에서 탐색합니다.</td>
+      <td>Markdown을 기준으로 색인하며 Google 동기화는 선택 사항입니다.</td>
       <td>Community 배포</td>
     </tr>
     <tr>
       <td><a href="https://github.com/woonyong-choi/manta-graph">Manta Graph</a></td>
       <td>현재 노트의 연결을 목차와 그래프로 탐색합니다.</td>
+      <td>현재 노트와 직접 링크만 읽기 전용으로 그립니다.</td>
       <td>Community 배포</td>
     </tr>
     <tr>
       <td><a href="https://github.com/woonyong-choi/manta-diagrams">Manta Diagrams</a></td>
       <td>긴 라벨과 복잡한 연결을 읽기 쉽게 렌더링합니다.</td>
+      <td>Mermaid 원문을 바꾸지 않고 전용 뷰어와 SVG로 변환합니다.</td>
       <td>출시 후보 검증</td>
     </tr>
   </tbody>
