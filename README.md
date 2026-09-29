@@ -16,11 +16,11 @@ Saturn과 Obsidian 플러그인, 개발 위키는 그 과정에서 만난 문제
 
 ## Saturn
 
-Codex·Claude CLI로 일할 때 흩어지는 대화, 터미널, 완료 조건을 함께 보는 macOS 작업 공간입니다. 로컬 폴더와 CLI 세션을 연결하고, 요청과 검사 결과를 기록합니다.
+Codex와 Claude Code를 하나의 대화로 이어 쓰는 터미널 도구입니다. 입력을 로컬에 먼저 기록하고, 에이전트를 바꿔도 맥락을 이어 가며, 작은 판단 모델로 다음 동작을 고릅니다.
 
-- 여러 계정 전환과 CLI/API 대화 연결은 설계 단계입니다.
+- 설계를 마치고 구현을 새로 시작하는 단계입니다.
 
-**[Saturn 저장소](https://github.com/woonyong-choi/saturn)** · [현재 사용법](https://github.com/woonyong-choi/saturn/blob/main/docs/guide.md) · [개발 설계](https://github.com/woonyong-choi/saturn/blob/main/docs/saturn-design.md)
+**[saturn-cli 저장소](https://github.com/woonyong-choi/saturn-cli)**
 
 ## 개인 도구
 
