@@ -20,7 +20,7 @@ Codex와 Claude Code를 하나의 대화로 이어 쓰는 터미널 도구입니
 
 - 설계를 마치고 구현을 새로 시작하는 단계입니다.
 
-**[saturn-cli 저장소](https://github.com/woonyong-choi/saturn-cli)**
+**[Saturn 저장소](https://github.com/woonyong-choi/saturn)**
 
 ## 개인 도구
 
